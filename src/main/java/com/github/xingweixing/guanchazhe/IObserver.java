@@ -1,5 +1,5 @@
 package com.github.xingweixing.guanchazhe;
 
-public interface IWatcher {
+public interface IObserver {
     void update(String msg);
 }

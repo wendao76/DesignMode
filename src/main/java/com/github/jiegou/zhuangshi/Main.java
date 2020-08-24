@@ -1,5 +1,9 @@
 package com.github.jiegou.zhuangshi;
 
+/**
+ * 装饰器模式
+ * @author wendao76
+ */
 public class Main {
     public static void main(String[] args) {
         Person person = new Person();

@@ -10,6 +10,7 @@ public class DecoratorA implements IDecrator {
         this.beDecrator = beDecorator;
     }
 
+    @Override
     public void operation() {
         beDecrator.operation();
         System.out.println("我是操作A");

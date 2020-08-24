@@ -1,15 +1,19 @@
 package com.github.xingweixing.guanchazhe;
 
+/**
+ * 观察者模式
+ * @author wendao76
+ */
 public class Main {
     public static void main(String[] args) {
-        IWatcher w1 = new Watcher("小明");
-        IWatcher w2 = new Watcher("小红");
-        IWatcher w3 = new Watcher("小刚");
-        IWatched watched = new Watched();
-        watched.addWatcher(w1);
-        watched.addWatcher(w2);
-        watched.addWatcher(w3);
-        watched.noticeWatcher("测试一个通知");
-        watched.noticeWatcher("第二个通知");
+        IObserver w1 = new Observer("小明");
+        IObserver w2 = new Observer("小红");
+        IObserver w3 = new Observer("小刚");
+        IObservable watched = new ObservableSubject();
+        watched.addObserver(w1);
+        watched.addObserver(w2);
+        watched.addObserver(w3);
+        watched.noticeObserver("测试一个通知");
+        watched.noticeObserver("第二个通知");
     }
 }

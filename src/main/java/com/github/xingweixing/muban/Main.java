@@ -1,6 +1,7 @@
 package com.github.xingweixing.muban;
 
 /**
+ * 模板方法模式
  * @author wendao76
  */
 public class Main {
