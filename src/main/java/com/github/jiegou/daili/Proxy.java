@@ -6,6 +6,7 @@ public class Proxy implements IGiveFlower {
         this.boy = new Boy(girl);
     }
 
+    @Override
     public void sendFlower() {
         boy.sendFlower();
     }

@@ -5,6 +5,7 @@ public class Boy implements IGiveFlower{
     public Boy(Girl girl) {
         this.mm = girl;
     }
+    @Override
     public void sendFlower() {
         System.out.println(this.mm.name + "送你鲜花");
     }
